@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="icon" href="/Images/NoamArie-WebsiteIcon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NoamArie</title>
+    </head>
+    <body>
+        <div id="ComputerView">
+            <div id="TopBar">
+                <nav>
+                    <div id="Logo" onclick="window.location.href = 'index.html'">
+                        <img id="LogoImage" src="/Images/NoamArie-WebsiteImage.png">
+                        <p id="LogoText">Noam Arie</p>
+                    </div>
+                    <a id="Home" class="Navigation" href="index.html">HOME</a>
+                    <a id="About" class="Navigation" onclick="scrollAbout()">ABOUT</a>
+                    <a id="About" class="Navigation" href="WebsitesOrApps/websites.html">WEBSITES</a>
+                    <a id="Apps" class="Navigation" href="WebsitesOrApps/applications.html">APPS</a>
+                    <a id="Contact" class="Navigation" onclick="scrollAbout()">CONTACT</a>
+                    <a href="#ChangeLanguage" onclick="changelanguage()" id="Language">EN</a>
+                </nav>
+            </div>
+            <div id="Content">
+                <div class="row">
+                    <div id="AboutMe">
+                        <p id="HelloTitle"><Label>__</Label> Hello</p>
+                        <h1 id="Title">I'm <Label>Noam</Label> Arie</h1>
+                        <p id="LitleTitle">This is <Label>Noam Arie</Label> designer, Web developer, Software engener. <br> 
+                            Want to be a good programmer.
+                        </p>
+                        <button class="ToAppsOrWebsites" onclick="window.location.href = 'WebsitesOrApps/applications.html';">To The Applications</button>
+                        <button class="ToAppsOrWebsites" onclick="window.location.href = 'WebsitesOrApps/websites.html';">To The Websites</button>
+                    </div>
+                    <div>
+                        <img id="ImgIcon" src="/Images/NoamArie-WebsiteImage.png">
+                    </div>
+                </div>
+                <img id="ArrowDownImage" src="/Images/Transparent Arrow Image.png">
+                <div id="AboutSide">
+                    <p class="AboutText">I am 12 years old and I love to code.</p>
+
+                    <p class="LitleAboutText">---</p>
+
+                    <p class="AboutText">If you could just look at the websites or install the apps its would be awesome</p>
+
+                    <p class="LitleAboutText">---</p>
+
+                    <div id="ContectDiv">
+                        <p class="AboutText">contact:</p>
+                        <a class="LitleAboutText" href="mailto:noamhazilon12@gmail.com">noamhazilon12@gmail.com</a>
+                    </div>
+                    
+                    <div id="Links">
+                        <i onclick="window.location.href = '#tiktok'" class="fa-brands fa-tiktok"><span id="TiktokHover" class="HoverLink">Tiktok</span></i>
+                        <i onclick="window.location.href = '#youtube'" class="fa-brands fa-youtube"><span id="YoutubeHover" class="HoverLink">Youtube</span></i>
+                        <i onclick="window.location.href = 'https://github.com/NoamArie12';" class="fa-brands fa-github"><span id="GithubHover" class="HoverLink">Github</span></i>
+                        <i onclick="window.location.href = '#dribbble'" class="fa-brands fa-dribbble"><span id="DribbbleHover" class="HoverLink">Dribbble</span></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="PhoneView"></div>
+
+    </body>
+    <script src="index.js"></script>
+</html>

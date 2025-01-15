@@ -1,0 +1,235 @@
+/*COLORS*/
+:root{
+    --TEST--: #ffffff;
+}
+
+.DarkTheme{
+    --TEST--: #000000;
+}
+
+/* GENERAL */
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #edf1fd;
+}
+@media only screen and (min-width: 788px) {
+    /* Phone Content */
+    #PhoneView{
+        display: none;
+    }
+    /* TOPBAR */
+    #TopBar{
+        position: fixed;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .Navigation {
+        margin-left: 25px;
+        margin-bottom: 15px;
+        color: #7f838f;
+        text-decoration: none;
+        font-size: 14.5px;
+        cursor: pointer;
+    }
+
+    #Logo{
+        display: flex;
+        cursor: pointer;
+    }
+
+    #LogoImage{
+        display: flex;
+        height: 30px;
+        width: 30px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    #LogoText {
+        margin-top: 10.75px;
+        margin-left: 5px;
+        font-size: 25px;
+        font-weight: 800;
+        color: #1d1d1c;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #Home {
+        margin-left: 250px;
+        padding: 5px;
+        background-color: #292929;
+        border-radius: 1px;
+        color: #e6e6e6;
+    }
+
+    #Language {
+        color: #121110;
+        margin-right: 25px;
+        font-weight: bold;
+        margin-left: auto;
+        text-decoration: none;
+    }
+    #Language:hover{
+        cursor: pointer;
+        transform: scale(1.099);
+    }
+    #Language:active{
+        color: #404040;
+    }
+
+    /* CONTENT */
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    #ImgIcon{
+        width: 300px;
+        height: 300px;
+        margin-right: 100px;
+        margin-top: 100px;
+    }
+
+    #AboutMe {
+        margin-top: 75px;
+        margin-left: 100px;
+        color: #2a2a2a;
+    }
+    
+    #Title Label{
+        color: #00588b;
+    }
+
+    #AboutMe p{
+        color: #787b85;
+    }
+
+    #HelloTitle label{
+        position: relative;
+        top: -9px;
+    }
+    #LitleTitle{
+        line-height: 1.5;
+    }
+    #LitleTitle label{
+        color: #2a2a2a;
+    }
+
+    .ToAppsOrWebsites{
+        margin-left: 10px;
+        background-color: #292929;
+        color: #d9d9d9;
+        padding: 10px;
+        border: 0;
+        border-radius: 5px;
+    }
+    .ToAppsOrWebsites:hover{
+        cursor: pointer;
+        background-color: #353535;
+        transform: scale(1.01);
+    }
+    .ToAppsOrWebsites:active{
+        background-color: #1c1c1c;
+    }
+    #ArrowDownImage{
+        margin-top: 250px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        rotate: 90deg;
+        height: 125px;
+        width: 150px;
+    }
+
+    #AboutSide{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        width: 100%;
+        background-color: #1e1e1e;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .AboutText{
+        text-align: center;
+        color: white;
+    }
+    .LitleAboutText{
+        display: block;
+        text-align: center;
+        color: rgb(187, 187, 187);
+        font-size: 5;
+        text-decoration: none;
+    }
+    #ContectDiv{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        height: 18px;
+    }
+    #Links{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        background-color: #3a3a3a;
+        color: #ffffff;
+        width: 100px;
+        padding: 10px;
+        margin-top: 50px;
+        margin-bottom: 0;
+        border-radius: 10px;
+        border: 2px solid #4a4a4a;
+    }
+    #Links i {
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+    }
+    .HoverLink{
+        display: none;
+        position: absolute;
+        padding: 10px;
+        z-index: 10;
+        top: 20px;
+        left: 0;
+
+        background-color: #000000;
+        color: #ffffff;
+        border: 1px solid #121110;
+        border-radius: 5px;
+        font-size: small;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #Links i:hover #TiktokHover{
+        display: block;
+    }
+    #Links i:hover #YoutubeHover{
+        display: block;
+    }
+    #Links i:hover #GithubHover{
+        display: block;
+    }
+    #Links i:hover #DribbbleHover{
+        display: block;
+    }
+}
+@media only screen and (max-width: 787px) {
+    #ComputerView{
+        display: none;
+    }
+}

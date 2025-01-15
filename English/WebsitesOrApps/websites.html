@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="websites.css">
+        <link rel="icon" href="/Images/NoamArie-WebsiteIcon.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NoamArie</title>
+    </head>
+    <body>
+        <div id="ComputerView">
+            <div id="TopBar">
+                <nav>
+                    <div id="Logo" onclick="window.location.href = '/English/index.html'">
+                        <img id="LogoImage" src="/Images/NoamArie-WebsiteImage.png">
+                        <p id="LogoText">Noam Arie</p>
+                    </div>
+                    <a id="Home" class="Navigation" href="../index.html">HOME</a>
+                    <a id="About" class="Navigation" onclick="scrollAbout()">ABOUT</a>
+                    <a id="Websites" class="Navigation" href="WebsitesOrApps/websites.html">WEBSITES</a>
+                    <a id="Apps" class="Navigation" href="applications.html">APPS</a>
+                    <a id="Contact" class="Navigation" onclick="scrollAbout()">CONTACT</a>
+                    <a href="#ChangeLanguage" onclick="changelanguage()" id="Language">EN</a>
+                </nav>
+            </div>
+            <div id="content">
+                <div id="topSide">
+                    <div id="title">
+                        <h1>Websites by</h1><label>Noam Arie</label>
+                    </div>
+                    <input id='websiteSearch' placeholder="Enter the name of the website">
+                    <button id="websiteSearchButton" onclick='redirect()'>Enter</button>
+                </div>
+                <div id="AllWebsites">
+                    <h1 id="NotFindGame">Not Find Website</h1>
+
+                    <div class="WebsiteContainer" id="GamesProjects">
+                        <div class="UperSideWebsiteContainer">
+                            <div class="WebsiteTitle">
+                                <img class="WebsiteIcon" src="/Images/GamesProjects-Icon.png"/>
+                                <p class="WebsiteName">Games Projects</p>
+                            </div>
+                            <button class="WebsiteOpenButton" onclick="window.location.href='https://noamarie12.github.io/GamesProjects/'">Open</button>
+                        </div>
+                        <img class="ImageOfWebsite" id="GamesProjectsImageWebsite" src="/Images/1_WebsiteImageGamesProjects.png"/>
+                    </div>
+                    <!--
+                    <div class="WebsiteContainer" id="TestWebsite">
+                        <div class="UperSideWebsiteContainer">
+                            <div class="WebsiteTitle">
+                                <img class="WebsiteIcon" src=""/>
+                                <p class="WebsiteName">Test Website</p>
+                            </div>
+                            <button class="WebsiteOpenButton" onclick="window.location.href=''">Open</button>
+                        </div>
+                        <img class="ImageOfWebsite" id="TestWebsiteImageWebsite" src=""/>
+                    </div>
+                    -->
+
+                </div>
+            </div>
+        </div>
+        <div id="PhoneView">
+            <div id="TopBar">
+                <nav>
+                    <p id="Logo">LOGO</p>
+                    <a id="Home" class="Navigation" href="index.html">HOME</a>
+                    <a id="About" class="Navigation" href="#about.html">ABOUT</a>
+                    <a id="About" class="Navigation" href="#Websites.html">WEBSITES</a>
+                    <a id="Contact" class="Navigation" href="#contact.html">CONTACT</a>
+                    <a href="#ChangeLanguage" onclick="console.log('ChangeLanguage')" id="Language">EN</a>
+                </nav>
+            </div>
+            <div id="content">
+                <h1>Phone</h1>
+            </div>
+        </div>
+
+    </body>
+    <script src="websites.js"></script>
+</html>

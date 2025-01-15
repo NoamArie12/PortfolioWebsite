@@ -1,0 +1,218 @@
+/*COLORS*/
+:root{
+    --TEST--: #ffffff;
+}
+
+.DarkTheme{
+    --TEST--: #000000;
+}
+
+/* GENERAL */
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+}
+@media only screen and (min-width: 788px) {
+    /* Phone Content */
+    #PhoneView{
+        display: none;
+    }
+    /* TOPBAR NAVIGATION */
+    #TopBar{
+        position: fixed;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .Navigation {
+        margin-left: 25px;
+        margin-bottom: 15px;
+        color: #7f838f;
+        text-decoration: none;
+        font-size: 14.5px;
+        cursor: pointer;
+    }
+
+    #Logo{
+        display: flex;
+        cursor: pointer;
+    }
+
+    #LogoImage{
+        display: flex;
+        height: 30px;
+        width: 30px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    #LogoText {
+        margin-top: 10.75px;
+        margin-left: 5px;
+        font-size: 25px;
+        font-weight: 800;
+        color: #1d1d1c;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #Home {
+        margin-left: 250px;
+        padding: 5px;
+        border-radius: 1px;
+        color: #7f838f;
+    }
+    #Websites{
+        padding: 5px;
+        background-color: #292929;
+        color: #e6e6e6;
+    }
+
+    #Language {
+        color: #121110;
+        margin-right: 25px;
+        font-weight: bold;
+        margin-left: auto;
+        text-decoration: none;
+    }
+    #Language:hover{
+        cursor: pointer;
+        transform: scale(1.099);
+    }
+    #Language:active{
+        color: #404040;
+    }
+
+    /* CONTENT */
+    #content{
+        margin-top: 75px;
+    }
+    .space{
+        height: 250px;
+    }
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+    }
+    #topSide{
+        margin-top: 100px;
+        text-align: center;
+    }
+    #title{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    #title h1{
+        font-size: 30px;
+        margin: 0;
+    }
+    #title label{
+        margin-top: 2px;
+        margin-left: 2px;
+        color: #7f838f;
+    }
+    #websiteSearch {
+        width: 500px;
+        height: 20px;
+        background-color: #e0e0e0;
+        border-radius: 15px;
+        border: none;
+        padding: 10px;
+        color: #333;
+    }
+    #websiteSearch::placeholder {
+        color: #555555;
+    }
+
+    #websiteSearch:hover{
+        transform: scale(1.05);
+    }
+    #websiteSearchButton {
+        width: 50px;
+        height: 40px;
+        background-color: #444; 
+        color: white;
+        border: none;
+        border-radius: 15px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    
+    #websiteSearchButton:hover {
+        background-color: #666;
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+    #websiteSearchButton:active{
+        background-color: #555555;
+    }
+
+    #NotFindGame{
+        display: none;
+        text-align: center;
+    }
+    #AllWebsites{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .WebsiteContainer{
+        width: 500px;
+        height: 350px;
+        background-color: #f7f7f8;
+        padding: 10px;
+        border: 0;
+        border-radius: 20px;
+        margin-left: 100px;
+    }
+    .UperSideWebsiteContainer{
+        display: flex;
+    }
+    .WebsiteTitle{
+        display: flex;
+        width: 400px;
+    }
+    .WebsiteIcon{
+        height: 50px;
+        width: 50px;
+        border-radius: 10px;
+    }
+    .WebsiteName{
+        margin-left: 15px;
+    }
+    .WebsiteOpenButton{
+        margin-top: 15px;
+        margin-left: 20px;
+        height: 20px;
+        width: 50px;
+        border: 0;
+        border-radius: 25px;
+        background-color: #007aff;
+        color: #ffffff;
+    }
+    .WebsiteOpenButton:hover{
+        cursor: pointer;
+        transform: scale(1.01);
+    }
+    .WebsiteOpenButton:active{
+        background-color: #0163cb;
+    }
+    .ImageOfWebsite{
+        height: 280px;
+        width: 500px;
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+    #GamesProjects{
+        margin-left: 0px;
+    }
+}
